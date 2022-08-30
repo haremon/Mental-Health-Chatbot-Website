@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="css/stylebuy.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Register</h2>
+        <form id="register" action="connectpayment.php" method="post">
+            <!--Account Information Start-->
+            <h4>Account</h4>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" placeholder="Your name" required class="name" name="comName">
+                    <i class="fa fa-user icon"></i>
+                </div>
+
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="email" placeholder="Email Address" required class="name" name="email">
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="password" placeholder="Password" required class="name" name="password">
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" placeholder="Address" required class="name" name="address">
+                    <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" placeholder="City" required class="name" name="city">
+                    <i class="fa fa-institution icon"></i>
+                </div>
+            </div>
+            <!--Account Information End-->
+
+
+            <!--DOB & Gender Start-->
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Date Of Birth</h4>
+                    <input type="text" placeholder="DD" required class="dob">
+                    <input type="text" placeholder="MM" required class="dob">
+                    <input type="text" placeholder="YYYY" required class="dob">
+                </div>
+                <div class="input_box">
+                    <h4>Gender</h4>
+                    <input type="radio" name="gender" class="radio" id="b1" value="m">
+                    <label for="b1">Male</label>
+                    <input type="radio" name="gender" class="radio" id="b2" value="f">
+                    <label for="b2">Female</label>
+                </div>
+            </div>
+            <!--DOB & Gender End-->
+
+
+
+            <div class="input_group">
+                <div class="input_box">
+
+            <button>Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
